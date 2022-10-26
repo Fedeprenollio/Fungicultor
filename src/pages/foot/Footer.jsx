@@ -17,7 +17,7 @@ export const Footer = () => {
         </div>
         {/* INFO */}
         <div className=" col-xs-12 col-md-6 col-lg-3 mb-2">
-          <p className="h4">Martin Funguicultor</p>
+          <p className="h4">Martin Fungicultor</p>
           <p className="h6">Bouwer - Córdoba</p>
           <p className="h6">Envios a todo el pais</p>
           <p className="h6">03 03 456</p>

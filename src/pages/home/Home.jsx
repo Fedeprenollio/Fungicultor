@@ -13,7 +13,7 @@ export const Home = () => {
             alt=""
           />
         </Container>
-        <h1 className="text-center mb-4">Martin Funguicultor!</h1>
+        <h1 className="text-center mb-4">Martin Fungicultor!</h1>
         {/* <div  className='portada mt-3'></div> */}
         <Container className="d-grid p-5">
           <div class="row">
