@@ -26,7 +26,7 @@ export const Footer = () => {
         <div className=" col-xs-12 col-md-6 col-lg-3 mb-2">
           <p>Redes</p>
           <Nav.Link
-            href="https://www.instagram.com/fprenollio/"
+            href="https://www.instagram.com/martinforte/"
             target="_blank"
             rel="noopener noreferrer"
           >
