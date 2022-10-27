@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 export const CardVideo = ({URL}) => {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card className='col ' style={{ maxWidth: '18rem' }}>
    <video controls src={URL} frameborder={URL}></video>
     <Card.Body>
       <Card.Title>Card Title</Card.Title>
