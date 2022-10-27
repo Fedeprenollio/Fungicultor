@@ -1,5 +1,8 @@
 
-
+/* #root{
+  min-height: 100vh;
+  background-color: red;
+} */
 .portada1,
 .portada2,
 .portada3 {
@@ -10,7 +13,7 @@
 .footer {
   text-align: center;
   margin-top: auto;
-  background-color: red;
+ 
 }
 
 .prueba{
