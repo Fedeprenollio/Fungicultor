@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import { CardStore } from "../../components/cards/CardStore";
 import { Filter } from "../../components/filters/Filter";
+import { PaginationComp } from "../../components/pagination/Pagination";
 import { store } from "../../store/store";
 
 export const Store = () => {
@@ -18,23 +20,29 @@ export const Store = () => {
   }
 
   return (
-    <>
-      
+    <div>
       <div className="col-lg col-12 ">
         <div className="container gap-5">
           <div className="row ">
             <Filter updateCategory={filterCategory} />
             <div className="col-lg-8 col-12 ">
               <div className="row">
-
-                {products.length>0 ?   products.map((product, index) => {
-                  return <CardStore key={index} product={product} />
-                }) :  <div className="row text-center mt-5  "> <h1>Nada por mostrar</h1></div>     } 
+                {products.length > 0 ? (
+                  products.map((product, index) => {
+                    return <CardStore key={index} product={product} />;
+                  })
+                ) : (
+                  <div className="row text-center mt-5  ">
+                    {" "}
+                    <h1>Nada por mostrar</h1>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+      {/* <PaginationComp /> */}
+    </div>
   );
 };

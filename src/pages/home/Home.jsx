@@ -48,7 +48,7 @@ export const Home = () => {
           </div>
         </Container>
       </Container>
-      {/* <Footer /> */}
+      
     </div>
   );
 };
