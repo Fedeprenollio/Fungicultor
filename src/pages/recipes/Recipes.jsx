@@ -4,22 +4,25 @@ import { recipes, videos } from "../../multimedia/multimedia";
 
 export const Recipes = () => {
   return (
-    <div className="container-fluid  text-center">
-      <div>Recipes</div>
+    <div className="container-fluid  ">
+      <h1>Recetas</h1>
       <h3>Recetas simples</h3>
-      <div className="col-lg col-12  text-center ">
-        <div className="row row-cols-1 gap-2  ">
+      <div className="col-lg col-12  ">
+        <div className="row row-cols-1 gap-2   ">
           {videos.map((video, index) => {
             return <CardVideo key={index} URL={video} />;
           })}
         </div>
-        <div className="row">
-          {recipes.map((r) => {
-            return (
-              <div className="container  text-center">
+
+        {recipes.map((r) => {
+          return (
+            <div >
+              <div
+                className="ratio ratio-16x9 my-2 mx-auto"
+                style={{ maxWidth: "80%" }}
+              >
                 <iframe
-                  width="560"
-                  height="315"
+                  className="mx-auto"
                   src={r.src}
                   title="YouTube video player"
                   frameborder="0"
@@ -27,9 +30,9 @@ export const Recipes = () => {
                   allowfullscreen
                 ></iframe>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

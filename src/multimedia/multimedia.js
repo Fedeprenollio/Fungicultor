@@ -22,9 +22,7 @@ export const videos=[
     "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4",
     "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4",
     "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4",
-    "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4",
-    "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4",
-    "https://res.cloudinary.com/dewegl2jr/video/upload/v1666701898/fungi/recetas/videos/receta1_dv5zjv.mp4"
+    
 ]
 
 export const recipes=[ 

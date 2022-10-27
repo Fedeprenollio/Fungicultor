@@ -4,7 +4,7 @@ import { NavLink, Link, useNavigate, Outlet } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="container-fluid  h4  text-center   ">
+    <div className="container-fluid  h4  text-center mb-0  ">
       <div className="row p-5 bg-dark  text-secondary ">
         {/* logo */}
         <div className=" col-xs-12 col-md-6 col-lg-3 mb-2">

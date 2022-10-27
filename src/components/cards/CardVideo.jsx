@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 
 export const CardVideo = ({URL}) => {
   return (
-    <Card className='col ' style={{ maxWidth: '18rem' }}>
+    <Card className='col mx-auto  ' style={{ maxWidth: '18rem' }}>
    <video controls src={URL} frameborder={URL}></video>
-    <Card.Body>
+    <Card.Body >
       <Card.Title>Card Title</Card.Title>
       <Card.Text>
         Some quick example text to build on the card title and make up the
