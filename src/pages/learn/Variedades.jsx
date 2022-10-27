@@ -37,7 +37,18 @@ const cultivo = [
   plástico y luego tenerlo en
   un sitio fresco, húmedo,
   ventilado e iluminado.`,
-    sustrato: `Enriquecimiento del sustrato.
+    micelio: `• Se inocula un pequeño
+  fragmento de seta en un
+  medio de cultivo estéril.
+  • El medio suele ser agaragar y el recipiente una
+  placa de petri.
+  • De forma casera se
+  puede usar cultivo en
+  peróxidos con cartón en
+  un recipiente hermético.`,
+
+    sustrato: {
+      materiales: `Enriquecimiento del sustrato.
   Algunos cultivadores añaden
   distintos aditivos, heno picado,
   harina de maíz, harina de soja,
@@ -46,13 +57,15 @@ const cultivo = [
   etc. Al sustrato se le añaden para
   mejorarlo y proporcionar mayor
   producción: harina de plumas,
-  yeso, urea, etc.
-  • Tratamiento térmico. Con ello se
-  consigue destruir semillas,
-  insectos parásitos, hongos, etc,
-  que puedan en desarrollarse
-  sobre el sustrato. Para ello se
-  realiza una pasteurización . `,
+  yeso, urea, etc.`,
+      tratamiento: `Tratamiento térmico. Con ello se
+      consigue destruir semillas,
+      insectos parásitos, hongos, etc,
+      que puedan en desarrollarse
+      sobre el sustrato. Para ello se
+      realiza una pasteurización .`,
+    },
+
     siembra: `Consiste en mezclar el micelio con la paja o sustrato ya preparado,
   de un modo uniforme. La cantidad de micelio comercial varía entre 1 y 5
   % del peso húmedo. A mayor cantidad el desarrollo del hongo será más
@@ -76,6 +89,13 @@ const cultivo = [
   – La mayor parte de la superficie ha de
   ser vertical para obtener setas de
   mayor calidad`,
+  induccion:`Para que el micelio empiece a producir ,
+  se le puede dar un estrés térmico poniéndolo 12
+  horas en la heladera. En el caso de que haya
+  primordios (honguitos pequeños) antes de inducir,
+  se recomienda dejarlos que se desarrollen y en la
+  segunda oleada realizar la inducción antes de que
+  aparezcan los mismos.`,
     fructificacion: `Cuando el sustrato esté invadido se llevan los sacos al local de
   fructificación y se hacen agujeros en las bolsas o se retira el plástico
   completamente.
@@ -144,10 +164,33 @@ export const Variedades = () => {
       </div>
       <div className="container-fluid my-2">
         <h3>Cultivo</h3>
-        <ListGroup variant="flush">
-          <ListGroup.Item> <b> Sustrato:</b> {cultivo[0].sustrato}</ListGroup.Item>
-          <ListGroup.Item><b>Siembra:</b> {cultivo[0].siembra}</ListGroup.Item>
-          <ListGroup.Item><b>Incubación:</b> {cultivo[0].incubacion}</ListGroup.Item>
+        <ListGroup   variant="flush" numbered >
+          <ListGroup.Item>
+            {" "}
+            <b> Micelio:</b> {cultivo[0].micelio} -{" "}
+            <a
+              href="https://www.instagram.com/martinforte/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tambiés lo podes adquirir aqui
+            </a>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            {" "}
+            <b> Materiales del Sustrato:</b> {cultivo[0].sustrato.materiales} <hr />
+            <b> Tratamiento del Sustrato:</b> {cultivo[0].sustrato.tratamiento} 
+
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <b>Siembra:</b> {cultivo[0].siembra}
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <b>Incubación:</b> {cultivo[0].incubacion}
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <b>Induccíon:</b> {cultivo[0].induccion}
+          </ListGroup.Item>
           <ListGroup.Item>
             <b>Fructificación:</b> {cultivo[0].fructificacion}
           </ListGroup.Item>

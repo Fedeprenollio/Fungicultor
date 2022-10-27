@@ -1,7 +1,6 @@
 import React from "react";
 import { Cards } from "../../components/cards/Cards";
 import { photos } from "../../multimedia/multimedia";
-import { Footer } from "../foot/Footer";
 
 export const Galery = () => {
   return (

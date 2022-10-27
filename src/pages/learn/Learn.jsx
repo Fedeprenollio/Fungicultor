@@ -5,7 +5,15 @@ import { Variedades } from "./Variedades";
 export const Learn = () => {
   return (
     <div className="container-fluid d-flex-column prueba m-3 ">
+     
+
+
+
+
       <Variedades />
+
+
+
       <div className="container-fluid">
         <h3>Links de interes</h3>
         <div className="col">
