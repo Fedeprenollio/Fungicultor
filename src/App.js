@@ -16,6 +16,7 @@ import { Store } from "./pages/store/Store";
 import { Contact } from "./pages/contact/Contact";
 import { Learn } from "./pages/learn/Learn";
 import { Footer } from "./pages/foot/Footer";
+import { ProductDetail } from "./pages/store/ProductDetail";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="galery" element={<Galery />} />
             <Route path="recipes" element={<Recipes />} />
             <Route path="store" element={<Store />} />
+            <Route path="store/:id" element={<ProductDetail/>} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Navigate replace to="/" />} />
           </Route>
