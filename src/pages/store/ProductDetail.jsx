@@ -16,13 +16,13 @@ export const ProductDetail = () => {
   }
 
   return (
-    <div className="container-fluid d-flex bg-color--ligth">
+    <div className="container-fluid d-flex flex-column  flex-sm-row bg-color-ligth">
       <div
-        className="container-fluid img-fluid m-3  "
+        className="container-fluid  m-3  "
         style={{ height: "600" }}
       >
         <img
-          className="rounded mx-auto d-block my-3"
+          className="rounded mx-auto d-block my-3 img-fluid"
           style={{ maxHeight: "500px" }}
           src={product?.img}
           alt=""

@@ -3,26 +3,20 @@ import { Button, Form } from "react-bootstrap";
 import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
-  const [email, setEmail] = useState({});
-  function sendEmail(e) {
-    e.preventDefault();
-    console.log(e.target);
-  }
-console.log(email.asunto)
-  function submit(e) {
-    console.log(e.target.value);
-    setEmail({
-      ...email,
-      [e.target.name]: e.target.value,
-    });
-  }
-
-
-
   return (
-    <div className="container-fluid d-flex-column prueba ">
-      <div className="h2">Contact</div>
-      <ContactForm/>
+    <div className="container-fluid d-flex flex-column  flex-sm-row  prueba  ">
+      {/* <h2 className="h2">Contact</h2> */}
+      <div className="container-fluid ">
+        <img
+          className="img-fluid"
+          src="https://res.cloudinary.com/dewegl2jr/image/upload/v1667050258/fungi/vector-cartero-dibujos-animados-cabeza-hongo-rojo-personaje-animado_193274-28406_x2e7pl.jpg"
+          alt="cartero"
+        />
+      </div>
+
+      <div className="container ">
+        <ContactForm />
+      </div>
     </div>
   );
 };
