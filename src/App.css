@@ -28,4 +28,9 @@
 #formContact{
   /* opacity:0; */
   
+} 
+
+::placeholder {
+  color: blue;
+  /* font-size: 1.5em; */
 }
