@@ -20,13 +20,13 @@ export const Store = () => {
   }
 
   return (
-    <div>
-      <div className="col-lg col-12 ">
+   
+      <div className="col-lg col-12 container">
         <div className="container gap-5">
           <div className="row ">
             <Filter updateCategory={filterCategory} />
             <div className="col-lg-8 col-12 ">
-              <div className="row">
+              <div className="row container">
                 {products.length > 0 ? (
                   products.map((product, index) => {
                     return <CardStore key={index} product={product} />;
@@ -42,7 +42,7 @@ export const Store = () => {
           </div>
         </div>
       </div>
-      {/* <PaginationComp /> */}
-    </div>
+   
+   
   );
 };
