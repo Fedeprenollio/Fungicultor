@@ -8,7 +8,7 @@ import { Footer } from "../foot/Footer";
 export const Home = () => {
   return (
     <div className="container-fluid ">
-      <div className="container  w-100  " >
+      <div className=" container col-md-10 col-12  ">
         <Carrusel />
       </div>
       <Container>

@@ -10,7 +10,7 @@ export function Carrusel() {
           src="https://res.cloudinary.com/dewegl2jr/image/upload/v1667069702/fungi/Setas_comestibles_klrhg6.jpg"
           alt="First slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption >
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
